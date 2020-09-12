@@ -1,7 +1,8 @@
 @echo off
 chcp 65001>nul
 
-echo.
+where sqlite3>nul 2>nul
+if %ERRORLEVEL% NEQ 0 ( echo Команда sqlite3 не найдена & pause & exit ) 
 echo create table if not exists logs(User varchar(10), Date text default current_timestamp); | sqlite3 logs.db
 echo insert into logs values('%USERNAME%', datetime('now', 'localtime')); | sqlite3 logs.db
 
@@ -13,6 +14,6 @@ echo select Date from logs order by Date asc limit 1; | sqlite3 logs.db
 
 echo.
 echo select * from logs; | sqlite3 -table logs.db
-echo.
+echo. 
 
 pause
