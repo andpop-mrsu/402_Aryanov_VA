@@ -1,0 +1,22 @@
+{
+    "name": "vladislav/tic-tac-toe",
+    "type": "project",
+    "authors": [
+        {
+            "name": "vladislavAA",
+            "email": "aryanov.vladislav@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
+	"bin": [
+        "bin/tic-tac-toe.php"
+    ],
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    }
+}
