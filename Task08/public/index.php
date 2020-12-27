@@ -39,8 +39,8 @@ $app->run();
 
 function openDatabase()
 {
-    if (!file_exists("./db/gamedb.db")) {
-        $db = new \SQLite3('./db/gamedb.db');
+    if (!file_exists("./../db/gamedb.db")) {
+        $db = new \SQLite3('./../db/gamedb.db');
 
         $gamesInfoTable = "CREATE TABLE gamesInfo(
     idGame INTEGER PRIMARY KEY,
@@ -60,7 +60,7 @@ function openDatabase()
 )";
         $db->exec($stepsInfoTable);
     } else {
-        $db = new \SQLite3('./db/gamedb.db');
+        $db = new \SQLite3('./../db/gamedb.db');
     }
     return $db;
 }
