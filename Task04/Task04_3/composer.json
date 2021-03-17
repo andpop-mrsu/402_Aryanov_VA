@@ -1,0 +1,22 @@
+{
+    "name": "labs/task01",
+    "type": "project",
+	"description": "task04_3",
+    "authors": [
+        {
+            "name": "Vladislav Aryanov",
+            "email": "aryanov.vladislav@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/run-test"
+    ]
+}
