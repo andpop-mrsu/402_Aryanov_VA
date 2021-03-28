@@ -1,0 +1,19 @@
+{
+    "name": "labs/task01",
+	"description": "task05_1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vladislav Aryanov",
+            "email": "aryanov.vladislav@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
