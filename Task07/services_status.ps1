@@ -1,0 +1,1 @@
+Get-Service | ForEach-Object { If ( $_.status -Eq "stopped" ) {Write-Host $_.status $_.name -Foregroundcolor red} Else {Write-Host $_.status $_.name -Foregroundcolor green}}
